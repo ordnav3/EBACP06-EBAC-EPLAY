@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import * as S from './styles'
 
 import logo from '../../assets/images/logo.svg'
@@ -7,11 +9,13 @@ const Header = () => (
   <>
     <S.HeaderBar>
       <div>
-        <img src={logo} alt="EPLAY" />
+        <Link to="/">
+          <img src={logo} alt="EPLAY" />
+        </Link>
         <nav>
           <S.Links>
             <S.LinkItem>
-              <a href="#">Categorias</a>
+              <Link to="/categories">Categorias</Link>
             </S.LinkItem>
             <S.LinkItem>
               <a href="#">Novidades</a>
